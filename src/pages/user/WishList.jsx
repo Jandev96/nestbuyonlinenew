@@ -8,7 +8,7 @@ export default function Wishlist() {
   const addToCart = useCartStore((state) => state.addToCart);
 
   useEffect(() => {
-    fetchWishlist();
+    fetchWishlist(); 
 
     const handleVisibility = () => {
       if (document.visibilityState === "visible") {
