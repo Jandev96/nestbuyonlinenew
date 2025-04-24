@@ -128,6 +128,12 @@ export default function LoginPage() {
                   >
                     {loading || isLoading ? 'Logging in...' : isAdmin ? 'Access Admin Dashboard' : 'Login'}
                   </button>
+
+                  <div className="text-center mt-4">
+  <Link to="/forgot-password" className="text-blue-400 hover:text-blue-500">
+    Forgot your password?
+  </Link>
+</div>
                 </form>
               </motion.div>
             </AnimatePresence>

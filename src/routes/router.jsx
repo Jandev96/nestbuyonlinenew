@@ -26,6 +26,8 @@ import AdminOrders from "../pages/admin/AdminOrders";
 import AdminCustomers from "../pages/admin/AdminCustomers";
 import Wishlist from "../pages/user/WishList";
 import AdminList from "../pages/admin/AdminList";
+import ForgotPasswordPage from "../pages/shared/ForgotPasswordPage";
+import ResetPasswordPage from "../pages/shared/ResetPasswordPage";
 
 export const router = createBrowserRouter([
   {
@@ -62,6 +64,15 @@ export const router = createBrowserRouter([
     path: "admin/login",
     element: <LoginPage />,
   },
+  {
+    path: "/forgot-password",
+    element: <ForgotPasswordPage />,
+  },
+  {
+    path: "/reset-password/:token",
+    element: <ResetPasswordPage />,
+  },
+  
 
   {
     path: "admin",
